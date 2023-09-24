@@ -1,0 +1,29 @@
+<p>fournisseur works!</p>
+<div *ngIf="!hide">
+    <div *ngFor="let f of fournisseurs" class="fournisseur-box">
+        <!--div *ngIf="f.idFournisseur <= 100" class="fournisseur-box"-->
+        <fieldset [ngStyle]="{'background-color': f.libelle === 'hp' ? 'green' : 'yellow'}"></fieldset>
+        
+        <ul>
+        <li>
+          <span>idFournisseur:</span>
+          <span>{{ f.idFournisseur }}</span>
+        </li>
+        <li>
+          <span>code:</span>
+          <span>{{ f.code }}</span>
+        </li>
+        <li>
+          <span>libelle:</span>
+          <span>{{ f.libelle }}</span>
+        </li>
+      </ul>
+    </div>
+</div><!--/div-->
+  
+  
+<button  (click)="toggleHide()">cacher</button>
+ 
+  
+       
+    

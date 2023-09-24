@@ -1,0 +1,11 @@
+.red-border {
+    border: 2px solid red;
+    padding: 10px; /* Ajoutez une marge intérieure pour l'espace autour du contenu */
+  }
+  /* styles.css or your.component.css */
+.fournisseur-box {
+    border: 2px solid black; /* Add styling for the box */
+    padding: 10px; /* Add padding for spacing */
+    margin: 5px; /* Add margin for separation */
+  }
+  
